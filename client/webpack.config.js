@@ -9,8 +9,7 @@ module.exports = () => {
     // Entry point for files
     entry: {
       main: './src/js/index.js',
-      install: './src/js/install.js',
-      cards: './src/js/cards.js'
+      install: './src/js/install.js'
     },
     // Output for our bundles
     output: {
@@ -34,12 +33,12 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'Contact Cards',
-        short_name: 'Contact',
-        description: 'Never forget your contacts!',
+        name: 'Just Another Text Editor',
+        short_name: 'JATE',
+        description: 'Text Editor!',
         background_color: '#225ca3',
         theme_color: '#225ca3',
-        start_url: './',
+        start_url: '/',
         publicPath: './',
         icons: [
           {
